@@ -1,0 +1,11 @@
+name: pdb-analysis
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - pandas
+  - requests
+  - matplotlib
+  - seaborn
+  - tqdm
