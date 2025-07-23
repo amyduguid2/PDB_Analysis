@@ -124,6 +124,7 @@ Top 10 Publishing Affiliations:
 ### 3.3 PDB Entry and Associated Article Trends Over Time
 
 - PDB entries per year from 2020–2025:
+
 |   Year |   PDB Entry Count |
 |-------:|------------------:|
 |   2020 |             12013 |
@@ -131,7 +132,7 @@ Top 10 Publishing Affiliations:
 |   2022 |             13001 |
 |   2023 |             12708 |
 |   2024 |              9732 |
-|   2025 |               880 |  
+|   2025 |               880 | 
 
 - Calculated PDB-associated publications per year.
 - Calculated annual growth rate for publications.
@@ -149,7 +150,7 @@ Top 10 Publishing Affiliations:
 
 ### ![Figure 1: PDB Entry Growth (2010–2025)](output/figures/pdbe_article_growth.png)
 
-**Figure 1:** Line plot showing the publication trends of PDB-related articles for the past 15 years
+**Figure 1:** Line plot showing the publication trends of PDB-related articles for the past 15 years.
 *Blue solid line shows the article count where each point represents the total publications from that year linked to a PDB entry.*
 *Red  dashed line shows the growth rate with each point indicating the growth rate of PDB-linked publications for that year.*
 
@@ -158,18 +159,20 @@ Top 10 Publishing Affiliations:
 ### ![Figure 2: Distribution of PDB-linked Publications Across Authors and Affiliations](output/figures/publications_distribution_lineplot.png)
 
 **Figure 2:** Line plot showing the distribution of the number of unique authors/affiliations for PDB-related publications in the last 5 years of PDB Entries.
-*Blue line with square points represents the number of unique publishing authors per year*
-*Orange line with triangle points represents the number of unique publishing affiliations per year*
-*The plot shows a steep curve, indicating a few authors and affiliations are producing most of the publications for the last 5 years of PDB entries*    
+*Blue line with square points represents the number of unique publishing authors per year.*
+*Orange line with triangle points represents the number of unique publishing affiliations per year.*
+*The plot shows a steep curve, indicating a few authors and affiliations are contributing to most of the publications for the last 5 years of PDB entries.*    
 
 ---
 
 ## 7. Improvements and Recommendations
 
-7.1 AI-Assisted Topic Trend Analysis
+7.1 AI-Assisted Topic Trend Analysis:
+
 Future work could leverage AI and machine learning techniques, such as natural language processing (NLP), to extract and analyse trends in PDB publications from article abstracts or full texts over time.
 
-7.2 Interactive Dashboards
+7.2 Interactive Dashboards:
+
 To enhance data exploration and accessibility, the development of interactive dashboards (e.g., using Plotly) could enable dynamic filtering, time-series visualisation, and user-driven queries. This would allow researchers to explore trends by year, topic, author, or structure type in a more intuitive and engaging way.
 
 ---
