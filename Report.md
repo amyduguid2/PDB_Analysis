@@ -165,7 +165,7 @@ Top 10 Publishing Affiliations:
 
 ---
 
-## 7. Improvements and Recommendations
+## 5. Improvements and Recommendations
 
 7.1 AI-Assisted Topic Trend Analysis:
 
@@ -177,7 +177,7 @@ To enhance data exploration and accessibility, the development of interactive da
 
 ---
 
-## 8. Conclusion
+## 6. Conclusion
 
 This analysis illustrates how open APIs and structured metadata can be combined to provide actionable insights into structural biology publishing trends.  
 Improving integration and disambiguation tools would enable broader, FAIRer (Findable, Accessible, Interoperable, Reusable) usage of this information.
