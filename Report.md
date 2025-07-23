@@ -141,10 +141,6 @@ Top 10 Publishing Affiliations:
 **Comments**
 - Earliest publications associated with the last 5 years of PDB entries date back to 1950.
 - Early publications are from historical papers still cited in recent PDB entries (last 5 years).
-- Significant spike in publication growth in the last 5 years, corresponding to PDB entries filter.
-- Spike could also correspond to the release of new technologies such as AlphaFold (released in 2020).
-- No significant publication growth in last 5 years, indicating a stable publication rate.
-- Dip in 2025 because the dataset is not complete for that year yet, as it is still ongoing.
 
 ## 4. Visualisations
 
@@ -153,6 +149,11 @@ Top 10 Publishing Affiliations:
 **Figure 1:** Line plot showing the publication trends of PDB-related articles for the past 15 years.
 *Blue solid line shows the article count where each point represents the total publications from that year linked to a PDB entry.*
 *Red  dashed line shows the growth rate with each point indicating the growth rate of PDB-linked publications for that year.*
+*Significant spike in publication growth in the last 5 years, corresponding to PDB entries filter.*
+*Spike in growth could also correspond to the release of new technologies such as AlphaFold (released in 2020).*
+*No significant publication growth in last 5 years, indicating a stable publication rate.*
+*Dip in publications 2025 because the year is still ongoing.*
+*However, given previous years the drop in publications in 2025 is still significant.*
 
 ---
 
