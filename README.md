@@ -13,12 +13,10 @@ To access the final report click [here.](Report.md)
 ```text
 📁 PDB_Analysis/
 ├── 📄 README.md
-├── 📄 report.md                 # Summary Report (Findings, Visualisation, Challenges)
+├── 📄 Report.md                 # Summary Report (Findings, Visualisation, Challenges)
 ├── 📄 main.py                   # Entry point to run full pipeline
 ├── 📁 data/
 │   └── .gitignore to ignore large output files from main.py
-├── processed/
-│   └── metadata_cleaned.csv
 ├── 📁 src/                      # Preprocessing and utility scripts
 │   ├── fetch_pdb.py             # API calls, raw data PDB data retrieval
 │   ├── fetch_articles.py        # API calls, raw data EPMC data retrieval
