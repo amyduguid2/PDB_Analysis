@@ -1,8 +1,5 @@
 import json
 import pandas as pd
-import ast
-from collections import defaultdict
-import pandas as pd
 
 def extract_epmc_metadata(input_json_path, output_csv_path):
     """

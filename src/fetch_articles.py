@@ -1,6 +1,5 @@
 # Import necessary libraries
 import pandas as pd
-import ast
 import requests
 import json
 
