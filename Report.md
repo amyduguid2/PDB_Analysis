@@ -91,7 +91,7 @@ Top 10 Publishing Authors:
 | Rossjohn J (0000-0002-2020-7522)  |                  46 |
 | McLellan JS (0000-0003-3991-542X) |                  46 |
 
-[Pyvis Network of Top 200 Publishing Authors:](./output/figures/author_collab_network.html)
+[Pyvis Network of Top 200 Publishing Authors:](./output/figures/author_collab_network.html). Download this link and open in browser to view the network.
 - Nodes are authors, edges are collaboration links
 - Node size indicates number of publications, edge width indicates number of collaborative publications. 
 
@@ -123,10 +123,19 @@ Top 10 Publishing Affiliations:
 
 ### 3.3 PDB Entry and Associated Article Trends Over Time
 
-- Counted PDB entries per year from 2020–2025  
-- Counted PDB-associated publications per year for the last 15 years
-- Calculated annual growth rate for publications
-- Visualised as a line plot with matplotlib
+- PDB entries per year from 2020–2025:
+|   Year |   PDB Entry Count |
+|-------:|------------------:|
+|   2020 |             12013 |
+|   2021 |             11435 |
+|   2022 |             13001 |
+|   2023 |             12708 |
+|   2024 |              9732 |
+|   2025 |               880 |  
+
+- Calculated PDB-associated publications per year.
+- Calculated annual growth rate for publications.
+- Visualised as a line plot with matplotlib, filtered for between 2010-2025.
 
 **Comments**
 - Earliest publications associated with the last 5 years of PDB entries date back to 1950.

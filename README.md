@@ -25,15 +25,18 @@ To access the final report click [here.](Report.md)
 │   ├── parse_results.py         # Parsing, cleaning, mapping
 │   └── utils.py                 # Data Saving Function
 ├── 📁 notebooks/
-│   └── analysis.ipynb           # Visualisation, charts, commentary
-├── 📁 output/
-│   ├── top_10_authors.csv        #CSV Containing Top 10 Publishing Authors
-│   ├── top_10_affiliations.csv   #CSV Containing Top 10 Publishing Affiliations
-│   ├── top_10_journals.csv       #CSV Containing Top 10 Publishing Journals
+│   └── analysis.ipynb           # Visualisations, Charts, Commentary
+├── 📁 output/                  # Output folder from analysis.ipynb
+│   ├── top_10_authors.csv        
+│   ├── top_10_affiliations.csv   
+│   ├── top_10_journals.csv       
+│   ├── top_10_collaborations.csv       
 │   └── figures/
-│       ├── top_entities.png
-│       ├── orcid_pie.png
-│       └── author_network.html
+│       ├── publication_distribution_lineplot.png
+│       ├── pdbe_article_growth.png
+│       ├── top_entries_rate_per_year.png
+│       ├── orcid_coverage_pie_chart.png   #pie chart of percentage of authors with valid ORCIDs
+│       └── author_collab_network.html     #network of author collaborations
 ├── 📄 .gitignore                # Ignore data folder
 └── 📄 requirements.txt          # All packages used (pyvis, pandas, seaborn, etc.)
 ```
