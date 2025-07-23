@@ -18,12 +18,12 @@ This project explores trends in PDB-submission related publications and maps top
 ### 2.1 EBI Search API (PDB Database)
 - **Base URL:** "https://www.ebi.ac.uk/ebisearch/ws/rest/pdbe"
 - **Parameters:** 
-- size: 100         #Fetched 100 entries per request. 
-- format: json      #Retrieved response in json format
-- filter: 2020-2025 #Filtered for entries in the last 5 years
-- start: 0+=100     #Retreived entries in batches of 100
-- query: "*:*"      #Retrieve all entries
-- fields:           #Selected which metadata to obtain using API
+- size: 100         | *100 entries per request* 
+- format: json      | *Retrieved response in json format*
+- filter: 2020-2025 | *Filtered for entries in the last 5 years*
+- start: 0+=100     | *Retreived entries in batches of 100*
+- query: "*:*"      | *No Keyword Filter*
+- fields:           | *Selected which metadata to obtain using API*
     - id = unique protein identifier ID e.g. 7l5l
     - description = description of protein structure *e.g. FLUORESCENT PROTEIN x-ray diffraction entry at resolution 2.01*
     - PUBMED = ID for publication associated with protein *e.g. 34748541*
