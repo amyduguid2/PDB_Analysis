@@ -114,5 +114,5 @@ def fetch_epmc(pubmed_ids, batch_size=1000, log_file="data/fetch_epmc_log.txt"):
                 log.write(f"Failed to fetch data for batch {i}-{i+len(batch)} after 3 retries\n")
                 print(f"Failed to fetch data for batch {i}-{i+len(batch)} after 3 retries")
 
+    print(f"Retrieved {len(results)} total articles from Europe PMC.")
     return results
-

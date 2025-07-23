@@ -1,11 +1,6 @@
 #import required libraries
 import time
 import requests #used for making HTTP requests to the PDB API
-import os
-
-#make directory for log output if it doesn't exist
-log_dir = "data/log_files"
-os.makedirs(log_dir, exist_ok=True)
 
 ### Function to fetch PDB entries released between start and end years ###
 def fetch_pdb(start_year, end_year, log_file="data/log_files/fetch_pdb_log.txt"):
@@ -22,7 +17,7 @@ def fetch_pdb(start_year, end_year, log_file="data/log_files/fetch_pdb_log.txt")
             print(f"Fetching entries for year: {year}")
             log.write(f"Fetching entries for year: {year}\n")
             start = 0  # Starting index for pagination
-            size = 1000
+            size = 100
             filter = f'creation_date:["{year}/01/01" TO "{year}/12/31"]'  # Number of entries to fetch per request
             # Loop to fetch all entries for the current year in batches
 

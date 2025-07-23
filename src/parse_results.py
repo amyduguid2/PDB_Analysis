@@ -81,39 +81,3 @@ def extract_epmc_authors(input_json_path, output_csv_path):
     df.to_csv(output_csv_path, index=False)
     print(f"Saved author data for {len(df)} authors to {output_csv_path}")
     return df
-
-
-def enrich_epmc_with_pdb_ids(pdb_df, epmc_df, output_csv_path):
-    """
-    Cleans and merges PDB metadata with EPMC metadata by mapping PubMed IDs to PDB IDs.
-
-    Parameters:
-        pdb_df (pd.DataFrame): DataFrame containing PDB metadata with 'fields.PUBMED'.
-        epmc_df (pd.DataFrame): DataFrame containing EPMC metadata with 'pmid'.
-
-    Returns:
-        pd.DataFrame: EPMC DataFrame enriched with a 'pdb_ids' column listing matched PDB IDs.
-    """
-
-    # Step 1: Clean 'fields.PUBMED' in pdb_df
-    pdb_df['fields.PUBMED'] = pdb_df['fields.PUBMED'].apply(
-        lambda x: ast.literal_eval(x)[0] if isinstance(x, str) and x.startswith('[') else x
-    )
-
-    # Step 2: Ensure EPMC 'pmid' is string and stripped
-    epmc_df["pmid"] = epmc_df["pmid"].astype(str).str.strip()
-
-    # Step 3: Build PubMed → PDB ID mapping
-    pubmed_to_pdb = defaultdict(list)
-    for _, row in pdb_df.iterrows():
-        pdb_id = row.get("id")
-        pubmed_ids = row.get("fields.PUBMED", [])
-        if isinstance(pubmed_ids, str):
-            pubmed_ids = [pubmed_ids]
-        for pmid in pubmed_ids:
-            pubmed_to_pdb[pmid].append(pdb_id)
-
-    # Step 4: Map PDB IDs into EPMC metadata
-    epmc_df["pdb_ids"] = epmc_df["pmid"].map(pubmed_to_pdb)
-    epmc_df.to_csv(output_csv_path, index=False)
-    print(f"Saved enriched EPMC data with PDB IDs to {output_csv_path}")
