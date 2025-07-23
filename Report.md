@@ -43,17 +43,17 @@ This project explores trends in PDB-submission related publications and maps top
 ### 2.2 Europe PMC API
 - **Base URL:** "https://www.ebi.ac.uk/europepmc/webservices/rest/searchPOST"
 - **Parameters:** 
-- query: pmid       #Searched for all unique pmids associated with PDB entries
-- format: json      #Retrieved response in json format
-- resultType: core  #Got most comprehensive metadata search
-- pageSize: 1000    #Maximum number of responses per request
+- query: pmid      | *Searched for all unique pmids associated with PDB entries*
+- format: json     | *Retrieved response in json format*
+- resultType: core | *Got most comprehensive metadata search*
+- pageSize: 1000   | *Maximum number of responses per request*
 
 **Preprocessing:**
 - Extracted 19782 unique PMIDs from PDB entries for past 5 years.
 - Queried Europe PMC API looping through these IDs
 
 **Output:**
-- Retrieved metadata for 19457 articles.
+- Retrieved metadata for 19457 associated articles.
 - Formatted the metadata as metadata.csv file with the most relevant features for analysis including:
     - Title  
     - Author list 
