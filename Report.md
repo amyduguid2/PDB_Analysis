@@ -66,7 +66,7 @@ This project explores trends in PDB-submission related publications and maps top
     - Pmid
     - Abstract
     - Number of citations
-- Also formatted this dataframe with a row for each individual author for downstream analysis. 
+- Also formatted this dataframe with a row for each individual author for downstream analysis.
 
 **Challenges & Solutions:**
 - Maximum 1000 responses per API request as stated in EBI API documentation.
@@ -117,23 +117,27 @@ Top 10 Publishing Affiliations:
 | Division of Biomedical Convergence, College of Biomedical Science, Kangwon National University, Chuncheon, 24341, Republic of Korea.    |                15 |
 
 **Challenges & Solutions:**
-- There was standardised ID to identiy the affiliation.
+- There was no standardised ID to identiy the affiliation.
 - Spelling errors, different formatting or different abbreviations aren't accounted for.
 - Future improvements could find a method to normalise the affiliation labels.
 
 ### 3.3 PDB Entry and Associated Article Trends Over Time
 
+**PDB Entries Trends:**
 - PDB entries per year from 2020–2025:
+- PDB entries were submitted at a steady rate, with a slight drop in 2024 and a significant drop in 2025.
+- The drop in PDB submissions in 2025 can be explained as the year is still ongoing, however given much higher numbers in previous years, the drop in 2025 is still significant.
 
-|   Year |   PDB Entry Count |
-|-------:|------------------:|
-|   2020 |             12013 |
-|   2021 |             11435 |
-|   2022 |             13001 |
-|   2023 |             12708 |
-|   2024 |              9732 |
-|   2025 |               880 | 
+|   Year |   PDB Entry Count |   Growth Rate (%) |
+|-------:|------------------:|------------------:|
+|   2020 |             12013 |         nan       |
+|   2021 |             11435 |          -4.81145 |
+|   2022 |             13001 |          13.6948  |
+|   2023 |             12708 |          -2.25367 |
+|   2024 |              9732 |         -23.4183  |
+|   2025 |               880 |         -90.9577  |
 
+**Published Articles Trends:**
 - Calculated PDB-associated publications per year.
 - Calculated annual growth rate for publications.
 - Visualised as a line plot with matplotlib, filtered for between 2010-2025.
@@ -144,7 +148,7 @@ Top 10 Publishing Affiliations:
 
 ## 4. Visualisations
 
-### ![Figure 1: PDB Entry Growth (2010–2025)](output/figures/pdbe_article_growth.png)
+### ![Figure 1: PDB Associated Publications Growth (2010–2025)](output/figures/pdbe_article_growth.png)
 
 **Figure 1:** Line plot showing the publication trends of PDB-related articles for the past 15 years.
 *Blue solid line shows the article count where each point represents the total publications from that year linked to a PDB entry.*
@@ -153,7 +157,6 @@ Top 10 Publishing Affiliations:
 *Spike in growth could also correspond to the release of new technologies such as AlphaFold (released in 2020).*
 *No significant publication growth in last 5 years, indicating a stable publication rate.*
 *Dip in publications 2025 because the year is still ongoing.*
-*However, given previous years the drop in publications in 2025 is still significant.*
 
 ---
 
@@ -162,7 +165,8 @@ Top 10 Publishing Affiliations:
 **Figure 2:** Line plot showing the distribution of the number of unique authors/affiliations for PDB-related publications in the last 5 years of PDB Entries.
 *Blue line with square points represents the number of unique publishing authors per year.*
 *Orange line with triangle points represents the number of unique publishing affiliations per year.*
-*The plot shows a steep curve, indicating a few authors and affiliations are contributing to most of the publications for the last 5 years of PDB entries.*    
+*The plot shows a steep curve, indicating a small number of authors and affiliations are high contributors to PDB-related publications.*
+*Many authors and affiliations only have one or few publications.*    
 
 ---
 
@@ -175,6 +179,12 @@ Future work could leverage AI and machine learning techniques, such as natural l
 7.2 Interactive Dashboards:
 
 To enhance data exploration and accessibility, the development of interactive dashboards (e.g., using Plotly) could enable dynamic filtering, time-series visualisation, and user-driven queries. This would allow researchers to explore trends by year, topic, author, or structure type in a more intuitive and engaging way.
+
+7.3 FAIR Data Improvements
+
+To enhance the FAIRness (Findability, Accessibility, Interoperability, and Reusability) of the dataset, the following improvements are recommended:
+- Standardise institutional affiliations across all entries to resolve naming inconsistencies (e.g., “EMBL-EBI” vs. “European Bioinformatics Institute”). Additionally, each affiliation should be assigned a numerical ID retrievable by the PMC API.
+- Ensure each author is uniquely identified by a valid ORCID iD. This resolves disambiguation of contributors and improves linkage across datasets and publications.
 
 ---
 
