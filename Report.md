@@ -172,15 +172,15 @@ Top 10 Publishing Affiliations:
 
 ## 5. Improvements and Recommendations
 
-7.1 AI-Assisted Topic Trend Analysis:
+5.1 AI-Assisted Topic Trend Analysis:
 
 Future work could leverage AI and machine learning techniques, such as natural language processing (NLP), to extract and analyse trends in PDB publications from article abstracts or full texts over time.
 
-7.2 Interactive Dashboards:
+5.2 Interactive Dashboards:
 
 To enhance data exploration and accessibility, the development of interactive dashboards (e.g., using Plotly) could enable dynamic filtering, time-series visualisation, and user-driven queries. This would allow researchers to explore trends by year, topic, author, or structure type in a more intuitive and engaging way.
 
-7.3 FAIR Data Improvements
+5.3 FAIR Data Improvements
 
 To enhance the FAIRness (Findability, Accessibility, Interoperability, and Reusability) of the dataset, the following improvements are recommended:
 - Standardise institutional affiliations across all entries to resolve naming inconsistencies (e.g., “EMBL-EBI” vs. “European Bioinformatics Institute”). Additionally, each affiliation should be assigned a numerical ID retrievable by the PMC API.
