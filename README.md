@@ -109,7 +109,7 @@ https://europepmc.org/RestfulWebService
 ## Dependencies
 See environment.yml for full details. Major packages include:
 
-Python 3.12,
+Python 3.13,
 pandas, matplotlib,
 requests (for API calls)
 notebook, ipykernel (for Jupyter use)
