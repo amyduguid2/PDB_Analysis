@@ -44,8 +44,10 @@ To access the final report click [here.](Report.md)
 ## Setup Instructions:
 
 ### 1. Clone Github Repository
+```bash
 git clone https://github.com/amyduguid2/PDB_Analysis.git
 cd PDB_Analysis
+```
 
 ### 2. Create Environment
 Option 1: Conda (Recommended)
