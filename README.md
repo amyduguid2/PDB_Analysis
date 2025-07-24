@@ -5,7 +5,7 @@ _Amy Duguid_
 This project retrieves and analyses Protein Data Bank (PDB) entries from the past five years, mapping them to their associated publications via the Europe PMC API. 
 It identifies publishing trends, top contributors, and collaboration networks, and includes both visual and statistical summaries in the final report.
 
-To access the final report click [here.](Report.md)
+To access the final report, click [here.](Report.md)
 
 ---
 
