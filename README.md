@@ -101,7 +101,7 @@ https://europepmc.org/RestfulWebService
 ## Assumptions & Notes
 - Only PDB entries deposited between 2020–2025 were queried.
 - Linked articles may include older publications due to retrospective citations.
-- Journal and affiliation names were not normalised; each variation was treated as a distinct entity, regardless of typos, abbreviations, or formatting inconsistencies.
+- Journal and affiliation names were not normalised; each variation was treated as a distinct entity, regardless of abbreviations or formatting inconsistencies.
 - Author names without a valid ORCID were assumed to represent multiple individuals and were therefore excluded from the analysis of top authors.
 
 ---
@@ -109,8 +109,8 @@ https://europepmc.org/RestfulWebService
 ## Dependencies
 See environment.yml for full details. Major packages include:
 
-Python 3.12
-pandas, matplotlib, tqdm
+Python 3.12,
+pandas, matplotlib,
 requests (for API calls)
 notebook, ipykernel (for Jupyter use)
 
