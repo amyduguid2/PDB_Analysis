@@ -32,9 +32,9 @@ To access the final report click [here.](Report.md)
 │   └── figures/
 │       ├── publication_distribution_lineplot.png
 │       ├── pdbe_article_growth.png
-│       ├── top_entries_rate_per_year.png
-│       ├── orcid_coverage_pie_chart.png   #pie chart of percentage of authors with valid ORCIDs
-│       └── author_collab_network.html     #network of author collaborations
+│       ├── pdb_entries_growth.png
+│       ├── orcid_coverage_pie_chart.png 
+│       └── author_collab_network.html     
 ├── 📄 .gitignore                # Ignore data folder
 └── 📄 requirements.txt          # All packages used (pyvis, pandas, seaborn, etc.)
 ```
