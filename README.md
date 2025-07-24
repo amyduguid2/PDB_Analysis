@@ -118,13 +118,6 @@ notebook, ipykernel (for Jupyter use)
 
 ---
 
-## Future Improvements
-- Normalise affiliation labels (e.g. "Harvard Med" vs "Harvard Medical School")
-- Perform NLP on abstracts to identify major research themes
-- Add clustering or topic modelling for more insight
-
----
-
 ## Contact
 For questions or feedback, please contact:
 Amy Duguid
