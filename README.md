@@ -36,7 +36,7 @@ To access the final report click [here.](Report.md)
 │       ├── orcid_coverage_pie_chart.png 
 │       └── author_collab_network.html     
 ├── 📄 .gitignore                # Ignore data folder
-└── 📄 requirements.txt          # All packages used (pyvis, pandas, seaborn, etc.)
+└── 📄 requirements.txt          # All packages used (pyvis, pandas etc.)
 ```
 
 ---
